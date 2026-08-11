@@ -4,7 +4,7 @@
 
 I built a virtual Windows domain environment to practice common entry-level IT support and Active Directory administration tasks. The lab includes a Windows Server domain controller and a domain-joined Windows client.
 
-The project is to demonstrates user and computer administration, organizational units, Group Policy, password resets, account lockout troubleshooting, security groups, and shared-folder permissions.
+The project is to shows user and computer administration, organizational units, Group Policy, password resets, account lockout troubleshooting, security groups, and shared-folder permissions.
 
 ## Lab Environment
 
@@ -32,3 +32,13 @@ The project is to demonstrates user and computer administration, organizational 
 * Configured share and NTFS permissions
 * Tested authorized access, denied access, and restored access
 * Used PowerShell to verify domain and account status
+
+## Project Walkthrough
+
+### 1. Windows Server and Domain Setup
+
+I installed Windows Server on `DC01`, added the Active Directory Domain Services role, and change the server to a domain controller. I then created the new forest and domain named `corplab.local`.
+
+This domain controller become a centralized authentication and administration for the lab environment.
+
+![Windows Server installed on DC01](screenshots/02-windows-server-installed.png)
