@@ -37,9 +37,9 @@ The project is to shows user and computer administration, organizational units, 
 
 ### 1. Windows Server and Domain Setup
 
-I installed Windows Server on `DC01`, added the Active Directory Domain Services role, and change the server to a domain controller. I then created the new forest and domain named `corplab.local`.
+I installed Windows Server on `DC01`, added the Active Directory Domain Services role, and changed the server to a domain controller. I then created the new forest and domain named `corplab.local`.
 
-This domain controller become a centralized authentication and administration for the lab environment.
+This domain controller became a centralized authentication and administration for the lab environment.
 
 ![Windows Server installed on DC01](Evidence/02-windows-server-installed.png)
 
@@ -119,3 +119,16 @@ I then removed Jotaro from `GG_IT_Share_RW`, signed out to refresh his security 
 Finally, I added Jotaro back to the group and confirmed that his access returned. This demonstrated that security-group membership controlled access successfully.
 
 ![Shared-folder access restored](Evidence/16-share-access-restored.png)
+
+## Key Takeaways
+
+This project gave me practical experience building and administering a small Windows domain environment. I learned how Active Directory centralizes user authentication, computer management, security policies, and access to shared resources.
+
+The account-lockout exercise helped me practice a realistic help-desk workflow: identify the problem, verify the account status, unlock the account, and confirm that the user can sign in again.
+
+The shared-folder exercise helped demonstrate why permissions should be assigned to security groups rather than individual users. Removing and restoring Jotaro’s group membership proved that access could be managed without changing the folder’s permissions each time.
+
+## Project Result
+
+The completed lab demonstrates foundational skills relevant to entry-level help-desk and IT support roles, including Active Directory administration, Group Policy, account troubleshooting, domain-client support, and group-based access control.
+
