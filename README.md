@@ -45,7 +45,7 @@ This domain controller become a centralized authentication and administration fo
 
 ### 2. Active Directory Structure and User Management
 
-After creating the `corplab.local` domain, I used Active Directory Users and Computers to organize domain resources. I created organizational units for users and groups instead of leaving every object in the default containers.
+After creating the `corplab.local` domain, I used Active Directory Users and Computers to organize domain resources. I created organizational units for users and groups instead of leaving every object in the default containers. For a more organized look.
 
-The test user **Jotaro Kujo** was placed in the `CorpLab\Users\IT` organizational-unit structure. This makes user accounts easier to manage and prepares the environment for applying permissions and policies based on department or job role.
+The test user **Jotaro Kujo** was placed in the `CorpLab\Users\IT` organizational unit structure. This makes user accounts easier to manage and prepares the environment for applying permissions and policies based on department or job role.
 
