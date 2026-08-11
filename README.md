@@ -94,3 +94,28 @@ I tested the policy using Jotaro’s account from `PC01`. After the account beca
 Finally, I signed back in to `PC01` and ran `whoami` to confirm that Jotaro’s domain account could authenticate successfully after recovery.
 
 ![Successful domain login after account unlock](Evidence/12-domain-login-after-unlock.png)
+### 6. Security Group and Shared-Folder Permissions
+
+I created the `GG_IT_Share_RW` security group to manage access to the `IT-Share` folder. Jotaro was added to this group so permissions could be assigned by role instead of directly to his user account.
+
+![Jotaro assigned to the shared-folder security group](Evidence/17-security-group-membership.png)
+
+I configured the share permissions to allow the group to read and change files without granting Full Control.
+
+![IT-Share sharing permissions](Evidence/18-IT-share-permissions.png)
+
+I also configured NTFS permissions so group members received `Modify` access while `SYSTEM` and administrators retained Full Control.
+
+![IT-Share NTFS permissions](Evidence/13-IT-share-NTFS-permissions.png)
+
+From `PC01`, I verified that Jotaro could create, edit, and rename a file through `\\DC01\IT-Share`.
+
+![Authorized access to IT-Share](Evidence/14-authorized-share-access.png)
+
+I then removed Jotaro from `GG_IT_Share_RW`, signed out to refresh his security token, and confirmed that access was denied.
+
+![Shared-folder access denied after group removal](Evidence/15-unauthorized-share-access-denied.png)
+
+Finally, I added Jotaro back to the group and confirmed that his access returned. This demonstrated that security-group membership controlled access successfully.
+
+![Shared-folder access restored](Evidence/16-share-access-restored.png)
