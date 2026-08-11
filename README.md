@@ -43,6 +43,15 @@ This domain controller become a centralized authentication and administration fo
 
 ![Windows Server installed on DC01](Evidence/02-windows-server-installed.png)
 
+After installing Windows Server, I renamed the server `DC01` to give the domain controller a clear and coherent hostname.
+
+![Server renamed to DC01](Evidence/03-server-renamed-DC01.png)
+
+I then installed Active Directory Domain Services and promoted `DC01` to a domain controller for the `corplab.local` domain.
+
+![DC01 configured as a domain controller](Evidence/04-DC01-domain-controller.png)
+
+
 ### 2. Active Directory Structure and User Management
 
 After creating the `corplab.local` domain, I used Active Directory Users and Computers to organize domain resources. I created organizational units for users and groups instead of leaving every object in the default containers. For a more organized look.
