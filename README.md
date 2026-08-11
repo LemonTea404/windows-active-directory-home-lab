@@ -80,3 +80,17 @@ I created and linked the `CorpLab Workstation Policy` Group Policy Object to cen
 I used `gpresult` on `PC01` to verify that the workstation received both the `CorpLab Workstation Policy` and the `Default Domain Policy` from `DC01`.
 
 ![Group Policy application verified on PC01](Evidence/9-GPO-verification.png)
+
+### 5. Account Lockout Policy and Account Recovery
+
+I configured the domain account-lockout policy with a threshold of five failed sign-in attempts. The lockout duration and counter-reset window were both set to 15 minutes.
+
+![Effective domain account-lockout settings](Evidence/10-lockout-policy-effective-settings.png)
+
+I tested the policy using Jotaro’s account from `PC01`. After the account became locked, I unlocked it through Active Directory Users and Computers and used PowerShell to verify that its `LockedOut` status returned to `False`.
+
+![PowerShell verification that Jotaro's account was unlocked](Evidence/11-account-unlocked-false.png)
+
+Finally, I signed back in to `PC01` and ran `whoami` to confirm that Jotaro’s domain account could authenticate successfully after recovery.
+
+![Successful domain login after account unlock](Evidence/12-domain-login-after-unlock.png)
