@@ -71,3 +71,12 @@ I joined the Windows client `PC01` to the `corplab.local` domain. I then moved i
 After joining the domain, I signed in to `PC01` using Jotaro’s domain account. The `hostname` and `whoami` commands confirmed both the client computer and authenticated domain user.
 
 ![Successful domain login on PC01](Evidence/06-PC01-domain-login.png)
+### 4. Group Policy Configuration and Verification
+
+I created and linked the `CorpLab Workstation Policy` Group Policy Object to centrally configure domain-joined workstations. The policy displays an authorized-use security message before users sign in.
+
+![Group Policy security message displayed on PC01](Evidence/8-GPO-security-message.png)
+
+I used `gpresult` on `PC01` to verify that the workstation received both the `CorpLab Workstation Policy` and the `Default Domain Policy` from `DC01`.
+
+![Group Policy application verified on PC01](Evidence/9-GPO-verification.png)
