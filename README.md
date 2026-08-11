@@ -1,39 +1,34 @@
-# Windows Active Directory Home Lab
+# Active Directory Home Lab
 
-## Objective
+## Project Overview
 
-Built a virtualized Windows environment to practice
-entry-level IT administration and Help Desk tasks.
+I built a virtual Windows domain environment to practice common entry-level IT support and Active Directory administration tasks. The lab includes a Windows Server domain controller and a domain-joined Windows client.
 
-## Environment
+The project is to demonstrates user and computer administration, organizational units, Group Policy, password resets, account lockout troubleshooting, security groups, and shared-folder permissions.
 
-- Windows Server
-- Windows 11
-- Active Directory Domain Services
-- DNS
-- PowerShell
-- VirtualBox
+## Lab Environment
 
-## Skills Practiced
+* VirutalMachine
+* Window 11 Pro
+* Window Server 2016
+* **Domain:** `corplab.local`
+* **Domain Controller:** `DC01`
+* **Client Computer:** `PC01`
+* **Test User:** `CORPLAB\jotaro.kujo`
+* **Security Group:** `GG_IT_Share_RW`
+* **Network Share:** `\\DC01\IT-Share`
 
-- Active Directory user management
-- Security groups
-- Organizational Units
-- Group Policy
-- Windows domain joining
-- File permissions
-- DNS troubleshooting
-- PowerShell
-- Help Desk troubleshooting
+## Skills Demonstrated
 
-## Lab Architecture
-
-[network diagram]
-
-## Troubleshooting Scenarios
-
-1. Password reset
-2. Account lockout
-3. Permission issue
-4. DNS issue
-5. Domain connectivity issue
+* Installed and configured Active Directory Domain Services
+* Created a new Windows domain
+* Organized users and computers with organizational units
+* Joined a Windows client to the domain
+* Created and managed domain users
+* Reset user passwords
+* Configured an account-lockout policy using Group Policy
+* Diagnosed and unlocked a locked domain account
+* Created and managed an Active Directory security group
+* Configured share and NTFS permissions
+* Tested authorized access, denied access, and restored access
+* Used PowerShell to verify domain and account status
