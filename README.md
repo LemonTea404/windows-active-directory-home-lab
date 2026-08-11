@@ -41,4 +41,4 @@ I installed Windows Server on `DC01`, added the Active Directory Domain Services
 
 This domain controller become a centralized authentication and administration for the lab environment.
 
-![Windows Server installed on DC01](screenshots/02-windows-server-installed.png)
+![Windows Server installed on DC01](Evidence/02-windows-server-installed.png)
