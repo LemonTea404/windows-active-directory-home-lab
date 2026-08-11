@@ -62,3 +62,12 @@ I also assigned Jotaro to the `IT-Staff` security group to demonstrate group-bas
 
 ![Jotaro assigned to the IT-Staff security group](Evidence/05-security-group-membership.png)
 
+### 3. Domain-Joined Client and User Login
+
+I joined the Windows client `PC01` to the `corplab.local` domain. I then moved its computer object into the `CorpLab\Workstations` organizational unit to keep domain computers organized.
+
+![PC01 computer object in the Workstations OU](Evidence/07-PC01-workstations-OU.png)
+
+After joining the domain, I signed in to `PC01` using Jotaro’s domain account. The `hostname` and `whoami` commands confirmed both the client computer and authenticated domain user.
+
+![Successful domain login on PC01](Evidence/06-PC01-domain-login.png)
