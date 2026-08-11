@@ -49,3 +49,7 @@ After creating the `corplab.local` domain, I used Active Directory Users and Com
 
 The test user **Jotaro Kujo** was placed in the `CorpLab\Users\IT` organizational unit structure. This makes user accounts easier to manage and prepares the environment for applying permissions and policies based on department or job role.
 
+I also assigned Jotaro to the `IT-Staff` security group to demonstrate group-based user organization and management.
+
+![Jotaro assigned to the IT-Staff security group](Evidence/05-security-group-membership.png)
+
