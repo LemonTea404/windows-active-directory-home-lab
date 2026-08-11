@@ -10,7 +10,7 @@ The project is to demonstrates user and computer administration, organizational 
 
 * VirutalMachine
 * Window 11 Pro
-* Window Server 2016
+* Window Server 2022
 * **Domain:** `corplab.local`
 * **Domain Controller:** `DC01`
 * **Client Computer:** `PC01`
